@@ -36,11 +36,6 @@ public class Platformer : MonoBehaviour
 			rb.velocity = new Vector2(rb.velocity.x, jumpForce);
 			isJumping = false;
 		}
-
-		if(Input.GetKeyDown(KeyCode.R))
-		{
-			SceneManager.LoadScene("Platformer");
-		}
 	}
 
 	void OnCollisionEnter2D(Collision2D collision)
